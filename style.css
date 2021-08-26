@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,8 +7,9 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 100vh;
+  color: #333;
 }
 
 .container {
@@ -20,7 +21,7 @@ body {
 
 .sidebar {
   height: 100%;
-  width: 35%;
+  width: 25%;
   position: absolute;
   top: 0;
   left: 0;
@@ -33,22 +34,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  color: #fff;
+  justify-content: space-around;
+  color: rgb(29, 29, 29);
 }
 
 .sidebar h1 {
-  font-size: 40px;
+  font-size: 60px;
   margin-bottom: 10px;
-  margin-top: -30px;
+  margin-top: -10px;
 }
 
 .main-slide {
   height: 100%;
   position: absolute;
   top: 0;
-  left: 35%;
-  width: 65%;
+  left: 25%;
+  width: 75%;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -61,9 +62,9 @@ body {
 }
 
 button {
-  background-color: #fff;
+  background-color: rgb(71, 71, 71);
   border: none;
-  color: #aaa;
+  color: rgb(238, 238, 238);
   cursor: pointer;
   font-size: 16px;
   padding: 15px;
@@ -79,7 +80,7 @@ button:focus {
 
 .container .controls button {
   position: absolute;
-  left: 35%;
+  left: 25%;
   top: 50%;
   z-index: 100;
 }
@@ -94,4 +95,13 @@ button:focus {
   transform: translateY(-100%);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.sidebar__title--white,
+.sidebar__text--white {
+  color: #fff;
+}
+.sidebar__text {
+  padding: 20px;
+  text-align: center;
 }
